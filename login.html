@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="club.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+        </style>
+    </head>
+    
+
+    <body> 
+         <nav> 
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="about-page.html">About Page</a></li>
+                <li ><a href="club-activity.html">Club Acitvity</a></li>
+                <li ><a href="club-activity.html">Club Acitvity</a></li>
+                <li class="active"><a href="club-membership.html">Login</a></li>
+            </ul>
+        </nav>
+        <main> 
+            <h1>Login</h1>
+            <div class="container">
+                <label for="username"><b>Email</b></label>
+                <input type="text" id= "email" placeholder="Enter Username" name="username" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+                <button type="login" id="login" onclick= "myFunction()" >Login</button>
+            </div>
+
+        </main>
+        
+        <script>
+            let el1 = document.getElementById("email")
+            let el2 = document.getElementById("psw")
+
+            function myFunction() {
+                var username = document.getElementById("email").value;
+                var password = document.getElementById("psw").value;
+                var printout = "email: " + username +" "+ "password: "+ password;
+                console.log(printout);
+            }
+
+        </script>
+    </body>
+
+    <footer> <!-- site wide footer -->
+        <p>Copyright © 2020 Jessica Lee</p>
+    </footer>
+</html>

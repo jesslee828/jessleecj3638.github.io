@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Club Membership</title>
+        <link rel="stylesheet" href="club.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+        </style>
+        <script src="clubmembership.js"></script>
+    </head>
+    <body>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="about-page.html">About Page</a></li>
+                <li ><a href="club-activity.html">Club Acitvity</a></li>
+                <li ><a href="login.html">Club Acitvity</a></li>
+                <li class="active"><a href="club-membership.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1> Apply Memebership Now! </h1>
+     <main> 
+       <div class="container">
+               <label for="email"><b>Email: </b></label>
+                <input type="text" id= "email" placeholder="Enter email" name="email" required>
+            
+                <label for="name"><b>Name: </b></label>
+               <input type="text" id="name" placeholder="Enter Your Name" name="name" required>
+
+                <label for="catsname"><b>Your Cat's Name: </b></label>
+                <input type="text" id="catsname" placeholder="Enter Your Cat's Name" name="catsname" required>
+
+                <label for="comment"><b>Comment: </b></label>
+                <textarea cols="30" rows="6" id = "comment" placeholder="Your comment here"></textarea>
+
+                <label for="pet-select"><strong>Cat's Species:</strong> </label>
+                <select name="pets" id="pet-select">
+                     <option value="">--Please choose an option--</option>
+                     <option value="mix">Mix</option>
+                    <option value="american shorthair">American Shorthair</option>
+                    <option value="scottish fold">Scottish Fold</option>
+                    <option value="maine coon">‎Maine Coon</option>
+                    <option value="ragdoll">Ragdoll</option>
+                    <option value="others">Others</option>
+                </select>
+                <button type="submit" id="submit" class= "submit" onclick= "myFunction()">Apply</button>
+        </div>
+
+        <div id="overlay">
+            <section id="ThanksDialog" class= "ShowDialog">
+                <div class="text">
+                    <h2 id= "ThanksMsg" class = "DialogThankU">Hellooooo</h2>
+                    <p id= "ThanksContent" class = "DialogContent"></p>
+                </div>
+                <button class= "close-button" id="close-button" onclick="myRemoveFunction()">close</button>
+            </section>
+        </div>
+        
+
+     </main>
+    </body>
+
+    <footer> <!-- site wide footer -->
+        <p>Copyright © 2020 Jessica Lee</p>
+    </footer>
+     
+</html>
